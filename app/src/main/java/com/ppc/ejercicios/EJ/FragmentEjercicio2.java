@@ -83,11 +83,6 @@ public class FragmentEjercicio2 extends Fragment {
                     imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
                 });
 
-
-
-
-
-
         return view;
 }
 

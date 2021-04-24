@@ -31,11 +31,6 @@ public class FragmentEjercicio1 extends Fragment {
     EditText editarTexto;
 
 
-
-
-
-
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {

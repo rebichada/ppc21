@@ -13,11 +13,20 @@
         <action
             android:id="@+id/action_fragment_ejercicios_to_fragment_ejercicio_1"
             app:destination="@id/fragment_ejercicio_1" />
+        <action
+            android:id="@+id/action_fragment_ejercicios_to_fragment_ejercicio_2"
+            app:destination="@id/fragment_ejercicio_2" />
     </fragment>
     <fragment
         android:id="@+id/fragment_ejercicio_1"
         android:name="com.ppc.ejercicios.EJ.FragmentEjercicio1"
         android:label="@string/fragment_ejercicio_1"
         tools:layout="@layout/fragment_ejercicio_1">
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_ejercicio_2"
+        android:name="com.ppc.ejercicios.EJ.FragmentEjercicio2"
+        android:label="@string/fragment_ejercicio_2"
+        tools:layout="@layout/fragment_ejercicio_2">
     </fragment>
 </navigation>

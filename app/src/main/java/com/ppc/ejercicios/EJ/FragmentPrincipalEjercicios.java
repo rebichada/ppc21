@@ -52,6 +52,11 @@ public class FragmentPrincipalEjercicios extends Fragment {
                     navController.navigate(R.id.fragment_ejercicio_2);
                 });
 
+        RxView.clicks(ejercicio3)
+                .subscribe(aVoid -> {
+                    navController.navigate(R.id.fragment_ejercicio_3);
+                });
+
         return view;
 }
 

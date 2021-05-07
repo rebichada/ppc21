@@ -19,6 +19,9 @@
         <action
             android:id="@+id/action_fragment_ejercicios_to_fragment_ejercicio_3"
             app:destination="@id/fragment_ejercicio_3" />
+        <action
+            android:id="@+id/action_fragment_ejercicios_to_fragment_ejercicio_4"
+            app:destination="@id/fragment_ejercicio_4" />
     </fragment>
     <fragment
         android:id="@+id/fragment_ejercicio_1"
@@ -37,5 +40,11 @@
         android:name="com.ppc.ejercicios.EJ.FragmentEjercicio3"
         android:label="@string/fragment_ejercicio_3"
         tools:layout="@layout/fragment_ejercicio_3">
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_ejercicio_4"
+        android:name="com.ppc.ejercicios.EJ.FragmentEjercicio4"
+        android:label="@string/fragment_ejercicio_4"
+        tools:layout="@layout/fragment_ejercicio_4">
     </fragment>
 </navigation>

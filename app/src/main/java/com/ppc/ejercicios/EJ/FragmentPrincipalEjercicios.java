@@ -26,6 +26,8 @@ public class FragmentPrincipalEjercicios extends Fragment {
     Button ejercicio2;
     @BindView(R.id.button_ejercicio_3)
     Button ejercicio3;
+    @BindView(R.id.button_ejercicio_4)
+    Button ejercicio4;
 
 
     NavController navController;
@@ -55,6 +57,10 @@ public class FragmentPrincipalEjercicios extends Fragment {
         RxView.clicks(ejercicio3)
                 .subscribe(aVoid -> {
                     navController.navigate(R.id.fragment_ejercicio_3);
+                });
+        RxView.clicks(ejercicio4)
+                .subscribe(aVoid -> {
+                    navController.navigate(R.id.fragment_ejercicio_4);
                 });
 
         return view;

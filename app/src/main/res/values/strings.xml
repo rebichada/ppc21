@@ -6,12 +6,14 @@
     <string name="fragment_ejercicio_1">Fragmento Ejercicio 1</string>
     <string name="fragment_ejercicio_2">Fragmento Ejercicio 2</string>
     <string name="fragment_ejercicio_3">Fragmento Ejercicio 3</string>
+    <string name="fragment_ejercicio_4">Fragmento Ejercicio 4</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
     <!--Nav Ejercicios-->
     <string name="Ejercicio_1">Ejercicio 1</string>
     <string name="Ejercicio_2">Ejercicio 2</string>
     <string name="Ejercicio_3">Ejercicio 3</string>
+    <string name="Ejercicio_4">Ejercicio 4</string>
     <!--Ejercicio 1-->
     <string name="cambiar_texto">Cambiar texto</string>
     <string name="aceptar">Aceptar</string>
@@ -23,4 +25,6 @@
     <string name="resta">Resta</string>
     <string name="division">Division</string>
     <string name="multiplicacion">Multiplicacion</string>
+    <!--Ejercicio 4-->
+    <string name="btnCamera">Capturar</string>
 </resources>

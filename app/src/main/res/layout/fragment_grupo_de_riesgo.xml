@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EJ.FragmentEjercicio1">
+    tools:context=".EJ.FragmentGrupoDeRiesgo">
 
     <Button
         android:id="@+id/button_cambiar_texto"

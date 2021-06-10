@@ -18,16 +18,14 @@ import com.ppc.ejercicios.R;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class FragmentPrincipalEjercicios extends Fragment {
+public class FragmentPrincipal extends Fragment {
 
-    @BindView(R.id.button_ejercicio_1)
-    Button ejercicio1;
-    @BindView(R.id.button_ejercicio_2)
-    Button ejercicio2;
-    @BindView(R.id.button_ejercicio_3)
-    Button ejercicio3;
-    @BindView(R.id.button_ejercicio_4)
-    Button ejercicio4;
+    @BindView(R.id.button_grupo_riesgo)
+    Button grupoRiesgo;
+    @BindView(R.id.button_informacion_pacientes)
+    Button infoPacientes;
+    @BindView(R.id.button_carga_datos)
+    Button cargaDatos;
 
 
     NavController navController;
@@ -44,23 +42,19 @@ public class FragmentPrincipalEjercicios extends Fragment {
         NavHostFragment navHostFragment = (NavHostFragment) requireActivity().getSupportFragmentManager().findFragmentById(R.id.fragment);
         navController = navHostFragment.getNavController();
 
-        RxView.clicks(ejercicio1)
+        RxView.clicks(grupoRiesgo)
                 .subscribe(aVoid -> {
-                    navController.navigate(R.id.fragment_ejercicio_1);
+                    navController.navigate(R.id.action_fragment);
                 });
 
-        RxView.clicks(ejercicio2)
+        RxView.clicks(infoPacientes)
                 .subscribe(aVoid -> {
-                    navController.navigate(R.id.fragment_ejercicio_2);
+                    navController.navigate(R.id.fragment_informacion_pacientes);
                 });
 
-        RxView.clicks(ejercicio3)
+        RxView.clicks(cargaDatos)
                 .subscribe(aVoid -> {
-                    navController.navigate(R.id.fragment_ejercicio_3);
-                });
-        RxView.clicks(ejercicio4)
-                .subscribe(aVoid -> {
-                    navController.navigate(R.id.fragment_ejercicio_4);
+                    navController.navigate(R.id.fragment_carga_datos);
                 });
 
         return view;

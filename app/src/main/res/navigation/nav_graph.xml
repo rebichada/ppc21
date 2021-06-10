@@ -7,44 +7,35 @@
 
     <fragment
         android:id="@+id/fragment_ejercicios"
-        android:name="com.ppc.ejercicios.EJ.FragmentPrincipalEjercicios"
+        android:name="com.ppc.ejercicios.EJ.FragmentPrincipal"
         android:label="@string/fragment_ejercicios"
         tools:layout="@layout/fragment_ejercicios">
         <action
             android:id="@+id/action_fragment_ejercicios_to_fragment_ejercicio_1"
-            app:destination="@id/fragment_ejercicio_1" />
+            app:destination="@id/fragment_grupo_riesgo" />
         <action
             android:id="@+id/action_fragment_ejercicios_to_fragment_ejercicio_2"
-            app:destination="@id/fragment_ejercicio_2" />
+            app:destination="@id/fragment_informacion_pacientes" />
         <action
             android:id="@+id/action_fragment_ejercicios_to_fragment_ejercicio_3"
-            app:destination="@id/fragment_ejercicio_3" />
-        <action
-            android:id="@+id/action_fragment_ejercicios_to_fragment_ejercicio_4"
-            app:destination="@id/fragment_ejercicio_4" />
+            app:destination="@id/fragment_carga_datos" />
     </fragment>
     <fragment
-        android:id="@+id/fragment_ejercicio_1"
-        android:name="com.ppc.ejercicios.EJ.FragmentEjercicio1"
-        android:label="@string/fragment_ejercicio_1"
-        tools:layout="@layout/fragment_ejercicio_1">
+        android:id="@+id/fragment_grupo_riesgo"
+        android:name="com.ppc.ejercicios.EJ.FragmentGrupoDeRiesgo"
+        android:label="@string/fragment_grupo_riesgo"
+        tools:layout="@layout/fragment_grupo_de_riesgo">
     </fragment>
     <fragment
-        android:id="@+id/fragment_ejercicio_2"
-        android:name="com.ppc.ejercicios.EJ.FragmentEjercicio2"
-        android:label="@string/fragment_ejercicio_2"
-        tools:layout="@layout/fragment_ejercicio_2">
+        android:id="@+id/fragment_informacion_pacientes"
+        android:name="com.ppc.ejercicios.EJ.FragmentInformacionParaPacientes"
+        android:label="@string/fragment_informacion_pacientes"
+        tools:layout="@layout/fragment_informacion_pacientes">
     </fragment>
     <fragment
-        android:id="@+id/fragment_ejercicio_3"
-        android:name="com.ppc.ejercicios.EJ.FragmentEjercicio3"
-        android:label="@string/fragment_ejercicio_3"
-        tools:layout="@layout/fragment_ejercicio_3">
-    </fragment>
-    <fragment
-        android:id="@+id/fragment_ejercicio_4"
-        android:name="com.ppc.ejercicios.EJ.FragmentEjercicio4"
-        android:label="@string/fragment_ejercicio_4"
-        tools:layout="@layout/fragment_ejercicio_4">
+        android:id="@+id/fragment_carga_datos"
+        android:name="com.ppc.ejercicios.EJ.FragmentCargaDatos"
+        android:label="@string/fragment_carga_datos"
+        tools:layout="@layout/fragment_carga_datos">
     </fragment>
 </navigation>

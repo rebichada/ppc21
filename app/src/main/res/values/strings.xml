@@ -2,22 +2,22 @@
     <string name="app_name">EjerciciosPPC</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="fragment_ejercicios">Fragmento principal ejercicios</string>
-    <string name="fragment_ejercicio_1">Fragmento Ejercicio 1</string>
-    <string name="fragment_ejercicio_2">Fragmento Ejercicio 2</string>
-    <string name="fragment_ejercicio_3">Fragmento Ejercicio 3</string>
-    <string name="fragment_ejercicio_4">Fragmento Ejercicio 4</string>
+    <string name="fragment_ejercicios">Fragmento principal</string>
+    <string name="fragment_grupo_riesgo">Grupo de riesgo</string>
+    <string name="fragment_informacion_pacientes">Información para pacientes</string>
+    <string name="fragment_carga_datos">Carga de datos</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
     <!--Nav Ejercicios-->
-    <string name="Ejercicio_1">Ejercicio 1</string>
-    <string name="Ejercicio_2">Ejercicio 2</string>
-    <string name="Ejercicio_3">Ejercicio 3</string>
-    <string name="Ejercicio_4">Ejercicio 4</string>
+    <string name="Grupo_riesgo">Grupo de riesgo</string>
+    <string name="Informacion_pacientes">Informacion para pacientes</string>
+    <string name="Carga_datos">Carga de datos</string>
     <!--Ejercicio 1-->
-    <string name="cambiar_texto">Cambiar texto</string>
-    <string name="aceptar">Aceptar</string>
-    <string name="cancel">Cancelar</string>
+    <string name="lipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Vivamus ac purus quis quam molestie rhoncus sit amet et purus. Curabitur a lorem malesuada, blandit felis sit amet, convallis felis.
+        Vivamus sed ultrices enim.
+        Praesent posuere tellus quis posuere hendrerit. Pellentesque vitae semper ante. Ut felis est, iaculis ut mollis vitae, lacinia ac felis.
+        Vestibulum laoreet et odio eget aliquam. Proin eu malesuada nisl.</string>
     <!--Ejercicio 2-->
     <string name="operacion_A">Operando A</string>
     <string name="operacion_B">Operando B</string>

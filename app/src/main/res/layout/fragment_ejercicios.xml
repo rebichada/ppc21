@@ -4,62 +4,40 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EJ.FragmentPrincipalEjercicios">
+    tools:context=".EJ.FragmentPrincipal">
 
     <Button
-        android:id="@+id/button_ejercicio_1"
+        android:id="@+id/button_grupo_riesgo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="75dp"
-        android:text="@string/Ejercicio_1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/button_ejercicio_2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="75dp"
-        android:text="@string/Ejercicio_2"
-        app:layout_constraintStart_toStartOf="@+id/button_ejercicio_1"
-        app:layout_constraintTop_toBottomOf="@+id/button_ejercicio_1"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/button_ejercicio_3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="75dp"
-        android:text="@string/Ejercicio_3"
-        app:layout_constraintStart_toStartOf="@+id/button_ejercicio_2"
-        app:layout_constraintTop_toBottomOf="@+id/button_ejercicio_2"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/button_ejercicio_4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="75dp"
-        android:text="@string/Ejercicio_4"
-        app:layout_constraintStart_toStartOf="@+id/button_ejercicio_3"
-        app:layout_constraintTop_toBottomOf="@+id/button_ejercicio_3"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
-        android:text="EJERCICIOS"
-        android:textSize="30dp"
-        android:textColor="@color/white"
+        android:layout_marginTop="150dp"
+        android:text="@string/Grupo_riesgo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
+    <Button
+        android:id="@+id/button_informacion_pacientes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:text="@string/Informacion_pacientes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_grupo_riesgo"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button_carga_datos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:text="@string/Carga_datos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_informacion_pacientes"
+        tools:ignore="MissingConstraints" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

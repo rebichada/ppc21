@@ -17,7 +17,7 @@ import com.ppc.ejercicios.R;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class FragmentEjercicio2 extends Fragment {
+public class FragmentInformacionParaPacientes extends Fragment {
 
     @BindView(R.id.buttonSuma)
     Button suma;
@@ -39,7 +39,7 @@ public class FragmentEjercicio2 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_ejercicio_2, container, false);
+        View view = inflater.inflate(R.layout.fragment_informacion_pacientes, container, false);
         ButterKnife.bind(this, view);
 
 

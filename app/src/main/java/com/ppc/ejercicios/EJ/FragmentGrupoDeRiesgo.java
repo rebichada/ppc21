@@ -16,7 +16,7 @@ import com.ppc.ejercicios.R;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class FragmentEjercicio1 extends Fragment {
+public class FragmentGrupoDeRiesgo extends Fragment {
 
     @BindView(R.id.button_cambiar_texto)
     Button cambiarTexto;
@@ -35,7 +35,7 @@ public class FragmentEjercicio1 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_ejercicio_1, container, false);
+        View view = inflater.inflate(R.layout.fragment_grupo_de_riesgo, container, false);
         ButterKnife.bind(this, view);
 
         aceptar.setVisibility(View.INVISIBLE);

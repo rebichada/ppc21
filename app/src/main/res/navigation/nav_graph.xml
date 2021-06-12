@@ -25,6 +25,9 @@
         android:name="com.ppc.ejercicios.EJ.FragmentGrupoDeRiesgo"
         android:label="@string/fragment_grupo_riesgo"
         tools:layout="@layout/fragment_grupo_de_riesgo">
+        <action
+            android:id="@+id/action_fragment_ejercicios_to_fragment_calculo_grupo_riesgo"
+            app:destination="@id/fragment_calculo_grupo_riesgo" />
     </fragment>
     <fragment
         android:id="@+id/fragment_informacion_pacientes"
@@ -37,5 +40,11 @@
         android:name="com.ppc.ejercicios.EJ.FragmentCargaDatos"
         android:label="@string/fragment_carga_datos"
         tools:layout="@layout/fragment_carga_datos">
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_calculo_grupo_riesgo"
+        android:name="com.ppc.ejercicios.EJ.FragmentCalculoGrupoRiesgo"
+        android:label="@string/fragment_calculo_grupo_riesgo"
+        tools:layout="@layout/fragment_calcular_grupo_riesgo">
     </fragment>
 </navigation>

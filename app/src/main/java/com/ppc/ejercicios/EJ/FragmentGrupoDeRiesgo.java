@@ -1,6 +1,7 @@
 package com.ppc.ejercicios.EJ;
 
 import android.os.Bundle;
+import android.text.method.ScrollingMovementMethod;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,6 +10,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
+import androidx.navigation.NavController;
+import androidx.navigation.fragment.NavHostFragment;
 
 import com.jakewharton.rxbinding4.view.RxView;
 import com.ppc.ejercicios.R;
@@ -18,18 +21,12 @@ import butterknife.ButterKnife;
 
 public class FragmentGrupoDeRiesgo extends Fragment {
 
-    @BindView(R.id.button_cambiar_texto)
-    Button cambiarTexto;
-    @BindView(R.id.button_aceptar)
-    Button aceptar;
-    @BindView(R.id.button_cancelar)
-    Button cancelar;
+    @BindView(R.id.textView)
+    TextView grupoRiesgoText;
+    @BindView(R.id.button_calcular)
+    Button calcular;
 
-    @BindView(R.id.vistaTexto)
-    TextView texto;
-    @BindView(R.id.editarTexto)
-    EditText editarTexto;
-
+    NavController navController;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -38,39 +35,14 @@ public class FragmentGrupoDeRiesgo extends Fragment {
         View view = inflater.inflate(R.layout.fragment_grupo_de_riesgo, container, false);
         ButterKnife.bind(this, view);
 
-        aceptar.setVisibility(View.INVISIBLE);
-        cancelar.setVisibility(View.INVISIBLE);
-        editarTexto.setVisibility(View.INVISIBLE);
+        NavHostFragment navHostFragment = (NavHostFragment) requireActivity().getSupportFragmentManager().findFragmentById(R.id.fragment);
+        navController = navHostFragment.getNavController();
 
-        RxView.clicks(cambiarTexto)
+        grupoRiesgoText.setMovementMethod(new ScrollingMovementMethod());
+
+        RxView.clicks(calcular)
                 .subscribe(aVoid -> {
-                    aceptar.setVisibility(View.VISIBLE);
-                    cancelar.setVisibility(View.VISIBLE);
-                    editarTexto.setVisibility(View.VISIBLE);
-
-                    cambiarTexto.setVisibility(View.INVISIBLE);
-                    texto.setVisibility(View.INVISIBLE);
-                });
-
-        RxView.clicks(aceptar)
-                .subscribe(aVoid -> {
-                    aceptar.setVisibility(View.INVISIBLE);
-                    cancelar.setVisibility(View.INVISIBLE);
-                    editarTexto.setVisibility(View.INVISIBLE);
-                    texto.setText(editarTexto.getText());
-
-                    cambiarTexto.setVisibility(View.VISIBLE);
-                    texto.setVisibility(View.VISIBLE);
-                });
-
-        RxView.clicks(cancelar)
-                .subscribe(aVoid -> {
-                    aceptar.setVisibility(View.INVISIBLE);
-                    cancelar.setVisibility(View.INVISIBLE);
-                    editarTexto.setVisibility(View.INVISIBLE);
-
-                    cambiarTexto.setVisibility(View.VISIBLE);
-                    texto.setVisibility(View.VISIBLE);
+                    navController.navigate(R.id.fragment_calculo_grupo_riesgo);
                 });
 
         return view;

@@ -46,7 +46,7 @@ public class FragmentPrincipal extends Fragment {
 
         RxView.clicks(grupoRiesgo)
                 .subscribe(aVoid -> {
-                    navController.navigate(R.id.action_fragment);
+                    navController.navigate(R.id.fragment_grupo_riesgo);
                 });
 
         RxView.clicks(infoPacientes)

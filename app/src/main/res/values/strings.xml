@@ -6,6 +6,7 @@
     <string name="fragment_grupo_riesgo">Grupo de riesgo</string>
     <string name="fragment_informacion_pacientes">Información para pacientes</string>
     <string name="fragment_carga_datos">Carga de datos</string>
+    <string name="fragment_calculo_grupo_riesgo">Calculo grupo de riesgo</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
     <!--Nav Ejercicios-->
@@ -13,11 +14,14 @@
     <string name="Informacion_pacientes">Informacion para pacientes</string>
     <string name="Carga_datos">Carga de datos</string>
     <!--Ejercicio 1-->
-    <string name="lipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Vivamus ac purus quis quam molestie rhoncus sit amet et purus. Curabitur a lorem malesuada, blandit felis sit amet, convallis felis.
-        Vivamus sed ultrices enim.
-        Praesent posuere tellus quis posuere hendrerit. Pellentesque vitae semper ante. Ut felis est, iaculis ut mollis vitae, lacinia ac felis.
-        Vestibulum laoreet et odio eget aliquam. Proin eu malesuada nisl.</string>
+    <string name="lipsum">
+        Edad entre 65 y 75 años.
+        Fumador.
+        Obesidad grado 1 o superior.
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras enim magna, aliquam ultrices ligula vitae, rutrum malesuada odio. Aenean viverra urna vitae enim blandit malesuada. Ut consectetur mauris vitae ante ullamcorper, interdum condimentum urna luctus. Etiam in eros quis lacus scelerisque vehicula nec et sem. Pellentesque non lectus vel eros laoreet ullamcorper quis vitae metus. Integer mollis ligula ut eros commodo cursus. Praesent mattis libero nec faucibus sollicitudin. Nullam vel efficitur nisi. Nullam posuere a erat vel consequat. Aliquam erat volutpat. Etiam sodales libero vitae pretium lacinia.
+        Aliquam malesuada tellus eget odio placerat laoreet. Mauris gravida rutrum eros non volutpat. Sed rutrum lectus in porttitor mattis. Nam faucibus, lorem eget facilisis elementum, nulla velit efficitur ipsum, a accumsan nisl tortor et tellus. Donec et luctus turpis, eget blandit elit. Sed accumsan tincidunt arcu non iaculis. Vestibulum pellentesque tempus dictum. Ut dictum orci nec ipsum rutrum commodo. Vestibulum odio enim, bibendum a molestie sit amet, laoreet sit amet libero.
+        Aliquam erat volutpat. Aenean et congue nisi, in malesuada ligula. Nullam faucibus dui ut magna vehicula porttitor nec id tellus. Proin ultricies consectetur enim et faucibus. Nulla vulputate quis sem non rhoncus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; In hac habitasse platea dictumst. Cras tincidunt interdum nulla sit amet interdum. Duis pharetra, ex in fringilla rutrum, odio risus euismod lacus, a volutpat sapien ipsum ut enim. Sed sed sapien facilisis, vehicula ligula at, accumsan nunc. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Phasellus sapien est, porta sit amet enim ut, facilisis tincidunt neque. Nunc facilisis magna egestas, elementum metus vitae, sagittis quam. </string>
     <!--Ejercicio 2-->
     <string name="operacion_A">Operando A</string>
     <string name="operacion_B">Operando B</string>

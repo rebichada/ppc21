@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EJ.FragmentCalculoGrupoRiesgo">
+
+    <TextView
+        android:id="@+id/textPaciente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:text="Paciente :"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/textPaciente"
+        app:layout_constraintTop_toBottomOf="@+id/textPaciente"
+        tools:ignore="MissingConstraints">
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/textRiesgoRecurrente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Riesgo recurrente :"
+        app:layout_constraintStart_toStartOf="@+id/editText"
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editTextRiesgoRecurrente"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@+id/textRiesgoRecurrente"
+        app:layout_constraintTop_toBottomOf="@+id/textRiesgoRecurrente"
+        tools:ignore="MissingConstraints">
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/textRiesgoProgreso"
+        android:layout_width="128dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="16dp"
+        android:text="Riesgo de progreso :"
+        app:layout_constraintStart_toStartOf="@+id/editTextRiesgoRecurrente"
+        app:layout_constraintTop_toBottomOf="@+id/editTextRiesgoRecurrente"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editTextRiesgoProgreso"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@+id/textRiesgoProgreso"
+        app:layout_constraintTop_toBottomOf="@+id/textRiesgoProgreso"
+        tools:ignore="MissingConstraints">
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/textEsquema"
+        android:layout_width="128dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="16dp"
+        android:text="Esquema :"
+        app:layout_constraintStart_toStartOf="@+id/editTextRiesgoProgreso"
+        app:layout_constraintTop_toBottomOf="@+id/editTextRiesgoProgreso"
+        tools:ignore="MissingConstraints" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textEsquema"
+        app:layout_constraintTop_toBottomOf="@+id/textEsquema">
+
+        <RadioButton
+            android:id="@+id/radio_pirates"
+            android:layout_width="163dp"
+            android:layout_height="wrap_content"
+            android:text="Si" />
+
+        <RadioButton
+            android:id="@+id/radio_ninjas"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:text="No" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button_calcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Calcular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
